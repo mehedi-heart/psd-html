@@ -1,0 +1,466 @@
+body{
+	margin:0;
+	padding: 0;
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+	color: #333;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.container{
+	width: 1180px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*top-header*/
+#top-header{
+	padding: 15px 0;
+}
+.address,.top-menu{
+	width: 50%;
+	float: left;
+}
+.address ul{
+	margin: 0;
+    padding: 0;
+}
+.address ul li{
+	list-style-type: none;
+    float: left;
+    margin-right: 22px;
+   font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+.top-menu ul{
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+.top-menu ul li{
+	list-style-type: none;
+    float: left;
+}
+.top-menu ul li a{
+	font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    display: block;
+    padding-left: 28px;
+}
+/*header*/
+#header{
+	background-color: #F5F6F1;
+	padding: 55px 0;
+}
+.logo{
+	width: 25%;
+	float: left;
+}
+.logo .logo-text{
+	float: left;
+    margin-right: 8px;
+}
+.logo .logo-text h1{
+	margin: 0;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 46px;
+}
+.logo .logo-text p{
+	margin: 0;
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+.logo .logo-image{
+	float: left;
+    padding-top: 5px;
+}
+.logo .logo-image img{}
+.menu{
+	width: 50%;
+	float: left;
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.menu ul li{
+	list-style-type: none;
+     display: inline-block;
+}
+.menu ul li a{
+	font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+    padding: 16px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+.menu ul li a:hover{
+	color: #F55856;
+}
+.menu ul li{
+	position: relative;
+}
+.menu ul li:after{
+	position: absolute;
+    content: "/";
+    top: 50%;
+    right: -7px;
+    color: #F55856;
+    transform: translateY(-50%);
+}
+.menu ul li:last-child:after{
+	content: "";
+}
+.add-cart{
+	float: right;
+}
+.add-cart .add-cart-text{
+	float: left;
+    margin-right: 8px; 
+     font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.add-cart .add-cart-text span{	  
+}
+.add-cart .add-cart-text p{
+	margin: 0;
+    line-height: 0.9;
+    font-weight: 600;
+}
+.add-cart .add-cart-image{
+	float: left;
+    padding-top: 6px;
+}
+.add-cart .add-cart-image img{
+	
+}
+/******slider********/
+#slider{
+	padding: 50px 0;
+}
+.slider{
+	position: relative;
+}
+.slider .shoes-list{
+	position: absolute;
+    top: 50%;
+    left: 95px;
+    transform: translateY(-50%);
+}
+.slider .shoes-list ul{
+	 margin: 0;
+    padding: 0;
+}
+.slider .shoes-list ul li{
+	list-style-type: none;
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.slider .buler{
+	position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.slider .buler img{}
+
+/****features-boxes****/
+#features-boxes{
+	padding-bottom: 45px;
+}
+.feature{
+    background-color: #F5F6F1;
+    width: 31.35%;
+    float: left;
+    text-align: center;
+}
+.feature:nth-child(2){
+	margin: 0 35px;
+}
+.feature h1{
+	font-size: 30px;
+    margin: 12px 0;
+     color: #463F3A;
+}
+.feature p{
+	margin: 0;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.feature span{
+	color: #F55856;
+	font-weight: 600;
+}
+/***categories section**/
+#categories{
+	background-color: #F8F8F8;
+    border-top: 1px solid rgba(226, 226, 226, 0.68);
+    border-bottom: 1px solid rgba(226, 226, 226, 0.68);
+    position: relative;
+    z-index: 0;
+    padding: 34px 0;
+}
+.heading{
+	    text-align: center;
+}
+.heading h1{
+	margin: 0;
+    font-size: 30px;
+    position: relative;
+}
+.heading h1:after,.heading h1:before{
+ position: absolute;
+ content:"";
+}
+.heading h1:after{
+        height: 1px;
+    width: 100%;
+    position: absolute;
+    background: #676767;
+    left: 0;
+    top: 57%;
+    z-index: -1;
+}
+.heading h1:before{
+        height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #676767;
+    left: 0;
+    top: 45%;
+    z-index: -1;
+}
+.heading h1 span{
+	z-index: 1;
+    background: #F8F8F8;
+    padding: 0 7px;
+     color: #463F3A;
+}
+.categories{
+	width: 32.31%;
+    float: left;
+    padding: 35px 0;
+}
+.categories:nth-child(3){
+	margin: 0px 18px;
+}
+.categories img{
+	width: 100%;
+}
+.cat-details{
+	padding-left: 22px;
+}
+.cat-details h2{
+	margin: 12px 0;
+    text-transform: uppercase;
+    font-size: 30px;
+     color: #463F3A;
+}
+.cat-details p{
+	margin: 0 0 16px;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.cat-details a{
+	font-size: 20px;
+	text-decoration: none;
+	font-family: 'Nunito Sans', sans-serif;
+	color: #F55856;
+	font-weight: 600;
+	display: block;
+}
+/*OUR LATEST ARRIVALS***/
+#latest-arrivals{
+	 border-bottom: 1px solid rgba(226, 226, 226, 0.68);
+    margin: 40px 0px;
+}
+#latest-arrivals .heading h1 span{
+	background: #fff;
+	 color: #463F3A;
+}
+.col4{
+	    width: 23.73%;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+    padding: 40px 0;
+}
+.col4:last-child{
+	margin-right: 0;
+}
+.product-image{
+	position: relative;
+}
+.product-image img{
+	    width: 100%;
+}
+.product-image span{
+	 position: absolute;
+    top: -5px;
+    left: -34px;
+    background: rgba(247, 247, 247, 0.53);
+    font-size: 16px;
+    text-transform: uppercase;
+    transform: rotate(-50deg);
+    padding: 8px 35px;
+}
+.caption{}
+.caption p{
+	font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    margin: 12px 0;
+}
+.caption strong{
+	font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 28px;
+}
+.caption button{
+	width: 100%;
+    background: #463F3A;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px;
+}
+/*****LATEST FROM THE BLOG section****/
+#blog{}
+.blog{
+	width: 31.63%;
+    float: left;
+     padding: 35px 0px;
+}
+.blog:nth-child(3){
+	margin: 0px 30px;
+}
+.blog img{
+	width: 100%;
+}
+.blog-details{}
+.blog-details h6{
+	font-size: 18px;
+    margin: 16px 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.blog-details p{
+	margin: 0;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.blog-details a{
+	    text-decoration: none;
+    color: #f55856;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 12px;
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+}
+/*******quote section*********/
+#quote{
+	margin: 100px 0px 50px;
+}
+.quote{
+	 text-align: center;
+}
+.quote h1{
+	    color: #463F3A;
+    font-size: 36px;
+    margin: 0;
+}
+.quote p{
+	font-size: 16px;
+	font-family: 'Nunito Sans', sans-serif;
+	margin: 6px 0;
+}
+.quote p span{
+	color: #f55856;
+}
+/*******top footer***/
+#top-footer{
+	background-color: #463F3A;
+	padding: 80px 0px;
+}
+#top-footer .logo-text h1,#top-footer .logo-text p,#top-footer .menu a{
+	color: #fff;
+}
+#top-footer .menu p{
+	color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+     letter-spacing: .2px;
+}
+.top-bottom{
+	    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
+.top-bottom a{
+	    display: block;
+    text-decoration: none;
+    padding: 12px 9px;
+    background: #3C3631;
+}
+.top-bottom img{}
+
+/******bottom footer*******/
+
+#bottom-footer{
+	background: #EEEEEE;
+	padding: 18px 0px;
+}
+.social-icons{
+width: 50%;
+    float: left;
+}
+.social-icons ul{
+	margin: 0;
+    padding: 0;
+}
+.social-icons ul li{
+ list-style-type: none;
+   display: inline-block; 
+}
+.social-icons ul li a{
+	margin-right: 16px;
+    font-size: 22px;
+  text-decoration: none;
+    color: #463F3A;
+}
+.social-icons ul li a i{}
+.bottom-footer-text{
+	    float: right;
+}
+.bottom-footer-text p{
+	margin: 0;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.bottom-footer-text p span{
+	color: #F55856;
+}
